@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>recipes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+        <ion-col size-md="6" offset-md="3">
+          <ion-list >
+          <app-recipes-item [recipeItem]="recipe" *ngFor="let recipe of recipes"></app-recipes-item>
+          </ion-list>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
